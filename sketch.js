@@ -21,7 +21,7 @@ function preload(){
 function setup(){
   
 //create the canvas and adjust the window sizes to suit the device 
-createCanvas(600,600);
+createCanvas(1200,600);
 
 path=createSprite(width/2,200);
 path.addImage(pathImg);
@@ -106,7 +106,7 @@ function draw() {
 function createCash() {
   if (World.frameCount % 200 == 0) {
    // Modify the positions of cash 
-    var cash = createSprite(Math.round(random(50, 350),40, 10, 10));
+    var cash = createSprite(Math.round(random(50, 550),40, 10, 10));
     cash.addImage(cashImg);
   cash.scale=0.20;
   cash.velocityY = 5;
@@ -119,7 +119,7 @@ function createDiamonds() {
   if (World.frameCount % 320 == 0) {
        // Modify the positions of diamonds 
 
-    var diamonds = createSprite(Math.round(random(50, 400),40, 10, 10));
+    var diamonds = createSprite(Math.round(random(50, 1000),40, 10, 10));
     diamonds.addImage(diamondsImg);
   diamonds.scale=0.05;
   diamonds.velocityY = 5;
@@ -132,7 +132,7 @@ function createJwellery() {
   if (World.frameCount % 410 == 0) {
     //   Modify the positions of jwellery to make them spawn throughout the available screen size.
 
-    var jwellery = createSprite(Math.round(random(50, 400),40, 10, 10));
+    var jwellery = createSprite(Math.round(random(50, 550),40, 10, 10));
     jwellery.addImage(jwelleryImg);
   jwellery.scale=0.17;
   jwellery.velocityY = 5;
@@ -145,7 +145,7 @@ function createSword(){
   if (World.frameCount % 530 == 0) {
     //   Modify the positions of sword to make them spawn throughout the available screen size.
 
-    var sword = createSprite(Math.round(random(50, 400),40, 10, 10));
+    var sword = createSprite(Math.round(random(50, 550),40, 10, 10));
     sword.addImage(swordImg);
   sword.scale=0.2;
   sword.velocityY = 4;
